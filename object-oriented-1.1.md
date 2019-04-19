@@ -17,9 +17,9 @@ The output of the analysis stage is a set of requirements. If we were to complet
 
 Website visitors need to be able to (italic represents actions, bold represents objects):
 
-_ _review_ _ our **history**
-*apply* for **jobs**
-*browse, compare,* and *order products*
+_review_  our **history** <br/>
+*apply* for **jobs** <br/>
+*browse, compare,* and *order products* <br/>
 
 In some ways, analysis is a misnomer. The baby we discussed earlier doesn't analyze the blocks and puzzle pieces. Rather, it will explore its environment, manipulate shapes, and see where they might fit. A better turn of phrase might be object-oriented exploration. In software development, the initial stages of analysis include interviewing customers, studying their processes, and eliminating possibilities.
 
