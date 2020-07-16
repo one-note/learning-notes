@@ -9,3 +9,8 @@ https://kafka-tutorials.confluent.io/
 https://data-flair.training/blogs/apache-kafka-tutorial/
 https://kafka.apache.org/intro
 ```
+
+## k8s
+```
+https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
+```
