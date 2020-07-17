@@ -14,3 +14,8 @@ https://kafka.apache.org/intro
 ```
 https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
 ```
+
+## microservice patterns 
+```
+https://microservices.io/patterns/
+```
