@@ -1,6 +1,6 @@
 # core
 
-### oops
+## oops
 * class vs interface
 * annonymous class or interface.
 * marker interface. can we write custom interface.
@@ -36,7 +36,7 @@
 * jar vs war vs ear.
 
 
-### collections
+## collections
 
 * Interfaces in collection.
 * Enumeration vs Iterator.
@@ -89,10 +89,27 @@
 * empty collections.
 
 * What is the internal for hashset.
+* what is weak hashmap.
+* what is identity hashmap.
+* what is enum map.
+
+* what is multi value map. ( Http Headers is an example of multivalue map. How to create custom multi value map)
+* when concurrent modification occurs. how to avoid that.
+
 
 ### collections time complexity (add, remove, get) and why
 * arraylist, linkedlist, hashmap, treemap, priority queue, blocking queue.
-* Does priority queue sorted.
+* Does priority queue sorted. Internal of priproty queue.
 * How blocking queue works internally.
 
+## Exceptions
+
+* Checked Exception vs RuntimeException
+* Custom Checked Exception creation and when to use.
+* Custom runtime exception creation and when to use.
+* ClassNotFoundException vs NoClassDefFoundError.
+* Can we catch Error.
+* try with multi catch and order of exceptions.
+* System.exit(0) and finally block execution.
+* Name some checked exceptions and runtim exceptions in java.
 
