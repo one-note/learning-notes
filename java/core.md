@@ -113,3 +113,10 @@
 * System.exit(0) and finally block execution.
 * Name some checked exceptions and runtim exceptions in java.
 
+## Multi Threading & Executor Service
+
+## File IO
+
+## Non Blocking IO
+
+## Design Patterns
