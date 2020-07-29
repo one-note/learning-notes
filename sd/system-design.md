@@ -1,5 +1,7 @@
 # System Design
 
+1. Glossary of System Design Basics
+
 Designing a URL Shortening service like TinyURL
 
 Designing Pastebin
@@ -33,6 +35,7 @@ Design Ticketmaster (*New*)
 Additional Resources
 
 2. Glossary of System Design Basics
+
 System Design Basics
 
 Key Characteristics of Distributed Systems
