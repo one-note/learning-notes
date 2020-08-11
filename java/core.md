@@ -124,6 +124,8 @@
 * creating threads with extends or implements.
 * adding callbacks to threads
 * join vs join(ms), wait vs wait(ms)
+* synchronization ( locking on method or block )
+* deadloack creation.
 * wait, notify, notifyall
 * producer and consume problem. print even odd using 2 threads.
 * use of blocking queue in multithreading. Does blocking queue uses wait, notify.
