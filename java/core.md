@@ -15,8 +15,8 @@
 * super() vs this()
 * constructor in inheritance (compilation and use super(x))
 * singleton class early loading & lazy loading.
-* class.forName(fullyQualifiedlClassName). which exception it throws.
-* data types. wrapper types.
+* Class.forName(fullyQualifiedlClassName). which exception it throws.
+* data types. wrapper types. Float Vs Double
 * Integer cache.
 
 * interface vs abstrcat class (strategy vs template design pattern)
@@ -53,15 +53,19 @@
 * what are the arraylist methods.
 * removeAll vs retainAll.
 
-* Sort employee list using comparable or compartor.
+* given employees with id(int), name, salary(double)
+* Sort employee list by name using comparable or compartor.
 * Sort employee list, if salary is same then sort by name.
 
 * reverse a array list with recursion.
 * binary search in an array list.
+* find the missing number in array of 1 to n
+* find the occurance of a number in a sorter array. ( no hashmap , use binary search)
 * code to create custom list add / iterate operations
 * delete the given node (head is not given)
 * find the merging point of 2 linked list.
 * merge 2 sorted linked list or array list. (hard)
+* write a custome iterator to iterateover arraylist.
 
 * hashmap internal with key conflict using get and put.
 * hashmap threshold.
@@ -80,8 +84,9 @@
 * hashtable vs hashmap
 * hashtable vs synchronizedmap
 * custom synchronized for Colections.SynchronizedMap
-* Treemap without comparator (means the key class implements comparable)
-* Treemap is sorted. so does it uses equals & hashcode od the key for comparison or it uses comparable( or comparator)
+* Treemap without comparator (means the key class need to implements comparable, else class cast exception)
+* Treemap is sorted. so does it uses equals & hashcode for the key for comparison or it uses comparable( or comparator)
+* Treemap has parameter as a compartor. also the key class implements comparable. on which basics the keys will be sorted in the treemap.
 
 * concurrent collections for list and map.
 * unmodiable collections 
@@ -95,11 +100,12 @@
 
 * what is multi value map. ( Http Headers is an example of multivalue map. How to create custom multi value map)
 * when concurrent modification occurs. how to avoid that.
-
+* concurrent collections.
 
 ### collections time complexity (add, remove, get) and why
 * arraylist, linkedlist, hashmap, treemap, priority queue, blocking queue.
 * Does priority queue sorted. Internal of priproty queue.
+* Does treemap uses equals and hashcode.
 * How blocking queue works internally.
 
 ## Exceptions
@@ -112,11 +118,33 @@
 * try with multi catch and order of exceptions.
 * System.exit(0) and finally block execution.
 * Name some checked exceptions and runtim exceptions in java.
+* when we shoould use user defined checked exception.
 
 ## Multi Threading & Executor Service
+* creating threads with extends or implements.
+* adding callbacks to threads
+* join vs join(ms), wait vs wait(ms)
+* wait, notify, notifyall
+* producer and consume problem. print even odd using 2 threads.
+* use of blocking queue in multithreading. Does blocking queue uses wait, notify.
+* executor services, singleThread, fixedThread, cachedThread. 
+* Countdown Latch, Cyclcic Barrier.
+* callable, future object
+* design a custom callable
+* completable future.
+
+## Design Patterns
+* singleton
+* factory
+* abstract factory
+* state
+* visitor
+* strategy ( interface )
+* template method ( abstrcat class )
+* observer (observer vs pub / sub)
 
 ## File IO
 
 ## Non Blocking IO
 
-## Design Patterns
+
