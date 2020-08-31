@@ -13,6 +13,7 @@
 * Git branching in local
 * Basic linux commands.
 * Git hands on.
+* Easy to clone: Cloning a existing repository.
 * Git creating repository in local. creating files under working directory.
 * Git status
 * Moving files between working directory to staging directory.
@@ -25,9 +26,6 @@
 * Pushing more commits from local to remote.
 * Checking git logs.
 
-# Part 3 : Git reverting commits
-* revert commits(s) with a new commit.
-
 # Part 3 : Git Branching
 * Creating Branch.(onetime)
 * Navigate to a branch.
@@ -36,6 +34,9 @@
 * Adding Commits to NewBranch.
 * Pushing new branch to remote.
 * Creating Pull request & merge with master.
+
+# Part 3.1 : Git reverting commits
+* revert commits(s) with a new commit.
 
 # Part 4 : Git Pull
 * Getting Chnages From remote repo branch to local repo branch.
