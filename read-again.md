@@ -6,6 +6,7 @@
 * Get up early from the bed. Have some exercise. Take your heavy breakfast.
 * Get ready for work or study something you like instead scrolling mobile.
 * Give time to your loved ones, family members & friends.
+* Minimize use of social media. Talk to the person F2F (or voice call) instead doing continous chat or video.
 
 ## A better professional life (40%)
 * Stay focussed on your professional skills.
