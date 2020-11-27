@@ -9,6 +9,8 @@
 ### ARRAYS
 ### LINKEDLIST
 ### THREADING
+* https://www.callicoder.com/java-locks-and-atomic-variables-tutorial/
+* https://www.callicoder.com/java-8-completablefuture-tutorial/
 * blocking queue
 * producer & consumer
 * even & odd thread
