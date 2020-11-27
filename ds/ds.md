@@ -3,6 +3,11 @@
 ### STACK
 ### QUEUE
 ### RED BLACK TREE
+### RECURSION
+### DYNAMIC PROGRAMMING
+### STRINGS
+### ARRAYS
+### LINKEDLIST
 ### THREADING
 * blocking queue
 * producer & consumer
@@ -16,9 +21,11 @@
 
 ### COMPLETABLE FUTURE
 
-### CLONING
+### CLONING & SINGLETON
 * deep cloning
 * swallow cloning
+
+### SERIALIZATION
 
 ### MUTABLE
 * string, stringbuffer, string builder
