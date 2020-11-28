@@ -57,6 +57,7 @@ Sample queries
 * Query to find the max salary?
 * Query to Find duplicate rows in a table? And delete the duplicate records?
 ```sql
+-- https://github.com/one-note/learning-notes/issues/3
 -- asssume name is duplicate.
 -- find duplicate records using inner query
  SELECT * FROM TBL_CUST C WHERE C.NAME IN (SELECT NAME FROM TBL_CUST GROUP BY NAME HAVING COUNT(*) > 1)
