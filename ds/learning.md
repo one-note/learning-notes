@@ -33,6 +33,10 @@
 ### MUTABLE
 * string, stringbuffer, string builder
 
+### OAUTH
+* https://medium.com/@athiththan11/oauth-2-grant-types-a-story-guide-582580a3c4c2
+* https://tools.ietf.org/html/rfc6749#section-1.3
+
 ### SQL
 
 	Join (All types of join)- left outer, right inner, full join, 
