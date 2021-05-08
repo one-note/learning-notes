@@ -1,3 +1,17 @@
+## Angular Links
+https://www.c-sharpcorner.com/article/learn-angular-8-step-by-step-in-10-days-day-1/
+
+https://www.tektutorialshub.com/angular-tutorial/
+
+https://www.freecodecamp.org/news/angular-8-tutorial-in-easy-steps/
+
+
+https://ultimatecourses.com/blog/category/angular/3/
+
+https://blog.angular-university.io/
+
+https://angular.io/docs
+
 ## CustomBeanPostProcessor
 
 ```java
