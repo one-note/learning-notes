@@ -1,3 +1,28 @@
+## RABIT MQ
+* https://www.architect.io/blog/rabbitmq-docker-tutorial
+* https://www.section.io/engineering-education/dockerize-a-rabbitmq-instance/
+* https://jstobigdata.com/rabbitmq/topic-exchange-in-amqp-rabbitmq/
+
+
+## Elastic serach:
+* `index has unlimited documents,
+index is part of one or more shard, 
+shard is part of a node,
+shard can be replicated across different nodes
+shard is scalable`
+* https://cloud.netapp.com/blog/cvo-blg-elasticsearch-architecture-7-key-components
+* https://buildingvts.com/elasticsearch-architectural-overview-a35d3910e515
+* https://qbox.io/blog/optimizing-elasticsearch-how-many-shards-per-index
+* https://logz.io/blog/10-elasticsearch-concepts/
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/size-your-shards.html
+* https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-shards.html
+* https://www.elastic.co/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster
+
+## Cassandra:
+* https://www.instaclustr.com/cassandra-architecture/
+* https://www.simplilearn.com/tutorials/big-data-tutorial/cassandra-architecture#architecture_requirements_of_cassandra
+* https://cassandra.apache.org/doc/latest/cassandra/architecture/guarantees.html
+
 ## Angular Links
 https://www.c-sharpcorner.com/article/learn-angular-8-step-by-step-in-10-days-day-1/
 
