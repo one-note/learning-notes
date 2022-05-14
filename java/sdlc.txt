@@ -4,7 +4,7 @@ Planning:
 ========
 
 PO and ST discussion:
-PRODUCT_OWNER (PO) approaches about a bussiness problem(fool delivery app)
+PRODUCT_OWNER (PO) approaches about a bussiness problem(food delivery app)
 to the SOFTWARE_TEAM (ST).
 
 PO is not a techinal person.
