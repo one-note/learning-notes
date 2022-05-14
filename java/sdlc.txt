@@ -1,0 +1,146 @@
+Design a Food Delivery App:
+
+Planning:
+========
+
+PO and ST discussion:
+PRODUCT_OWNER (PO) approaches about a bussiness problem(fool delivery app)
+to the SOFTWARE_TEAM (ST).
+
+PO is not a techinal person.
+ST has one or more techinical person having expertise on software development/release/management.
+ST asks PO how many people are going to get benefit 
+after getting the solution to the problem.
+PO: 50000
+ST: what is the type of user.
+PO: Delivery Person, Food Item Purchaser, Restuarants, Admin management of PO.
+ST: Do you want to deploy application in cloud / bare metal
+PO: Cloud like AWS, GCP, AZURE
+ST: Do you want to scale your service across multiple cities in India.
+PO: As of now we are planning for 4 metro cities across India.
+ST: At intial phase lets pay some x amount so that we can take your assignment ahead.
+PO: pays x amount as DD and signs certain documents for agggrements between 2 parties.
+ST: Deal Done.
+
+Tech Planning:
+==============
+What language / database to choose.
+
+How to purchase machines(cloud).
+
+for development/testing/release phase of the application.
+
+What are the aspects we have to provide as part of the product like:
+user login, 
+order history, 
+order payment service,
+Restuarants list, 
+feedback services, 
+customer claim service
+
+How to form the teams. Who will be the Product Manager /
+How many teams. 
+Each team will have Team Leam/Enginners/QA
+
+
+Define:
+=======
+user login team: mostly handles the login related work.
+order history: manages how user can place the order and it can route to a delivery person or hotel.
+payment service: handles the payment after purchase of food.
+devops team: set up the machines and establishes the require networking between them, so that developer can run the code in these machines
+
+each team leam defines respective task in jira board for team 
+and assign to enginners .
+
+Design: 
+=======
+
+Given a well defined problem statement.
+Design Software Components like app, database, services, messaging. How they can communicate with each other.
+App Code and Database Communication. Use of messaging. What kind of data in which 
+table. Relationship between tables. Class design. Sequence diagram design.
+Case diagram design.
+
+Development:
+============
+
+Mostly involved actual coding by frontend developer, backend developer,
+and database developer. 
+Sometimes one person can handle frontend, backend, database. These guys really paid high
+and known as fullstack developer.
+
+unit test case of code, 
+integration test case of code, 
+interaction with different components(local or cloud) for a given 
+problem statement.
+code commit to git (what is git).
+self verify the application behaviour (developed aspect)
+by deploying to one of cloud machine.
+
+Build:
+=======
+DevOps teams do this mostly. 
+But now a days these process are getting automated.
+
+The application build into a package(ex docker image). It has a certain version number everytime it is build.
+
+Testing
+========
+
+Testing: Developer Testing
+==========================
+Whatever code has been devolpes has been built into an image in last step.
+So it will be deployed into a cloud machine called with a logical name 
+dev-env.
+Only developers will verify the changes.
+
+Testing: Quality Assurance Testing
+==================================
+Once developers verified the changes. The deveops team deploy the same image 
+into another machine called qa-env.
+
+Quality assurance enginners(QA) validate the product aspects.
+If any of product aspect not valid then a defect ticket created by the QA.
+The developer/team who has worked on this product aspect need to fix this.
+
+Once QA validation is complete. The image version is marked for release.
+
+Pre-Release
+===========
+The image which is marked as release will be deployed into 
+another machine called pre-prod-environment.
+
+Here the ST demonstrates the product aspect to PO.
+If PO approves then the product will be release to prod where everyone over the internet
+can use the product.
+
+PO must clear all his payment mostly here.
+
+Release
+=======
+The image which is tagged as release is deployed to another cloud machine which is called
+production-env.
+
+Here the users over the public internet can use this.
+
+Product successfully released.
+
+It is party-time for SO team at MAYFAIR Lagoon organised by PO.
+
+Support
+=======
+Hope everyone is back from the MAYFAIR party.
+As we have released the product and many users are using it over the internet.
+Obviosuly sometimes our cloud machines go slow.
+Customers may have queries regarding order and payment to PO team. 
+PO team must have created a ticket for a technical glitch.
+
+So it is time for enginners to analyse the issues and fix them at earliest.
+
+
+
+
+
+
+
