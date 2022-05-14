@@ -11,7 +11,7 @@ PO is not a techinal person.
 ST has one or more techinical person having expertise on software development/release/management.
 ST asks PO how many people are going to get benefit 
 after getting the solution to the problem.
-PO: 50000
+PO: We can start with 50000 orders per city in a day
 ST: what is the type of user.
 PO: Delivery Person, Food Item Purchaser, Restuarants, Admin management of PO.
 ST: Do you want to deploy application in cloud / bare metal
