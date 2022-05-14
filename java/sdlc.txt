@@ -1,4 +1,6 @@
 Design a Food Delivery App:
+This explains the SDLC flow of the app.
+This is not the backend system design of the app.
 
 Planning:
 ========
