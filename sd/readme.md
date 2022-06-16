@@ -59,3 +59,10 @@ CAP Theorem
 Consistent Hashing
 
 Long-Polling vs WebSockets vs Server-Sent Events
+
+
+Links:
+
+https://serhatgiydiren.github.io/system-design-inteview-topics
+
+https://www.prodevelopertutorial.com/system-design-interview-topics-and-examples/
