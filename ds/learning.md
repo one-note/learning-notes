@@ -1,14 +1,7 @@
-### BST
-### HEAPS
-### STACK
-### QUEUE
-### SEGMENT TREE
-### RED BLACK TREE
-### RECURSION
-### DYNAMIC PROGRAMMING
-### STRINGS
-### ARRAYS
-### LINKEDLIST
+
+# Grokking:
+https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf
+
 ### THREADING
 * https://www.callicoder.com/java-locks-and-atomic-variables-tutorial/
 * https://www.callicoder.com/java-8-completablefuture-tutorial/
