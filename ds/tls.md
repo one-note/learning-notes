@@ -70,6 +70,11 @@ z + (x+y) = k
       x + (y+z) = k
       
 So total 1 Round Trip between server & client to get k(symmetric key).
+### Mathmatical way to TLS 1.3
+- client privatey key x. client has a function g. client sends g, g^x to the server.
+- server private key y. server upon receiving g^x, it computes (g^x)^y = z. z is the symmetric key. server sends g^y to the client.
+- client upon receiving g^y, computes (g^y)^x = z. z is the symmetric key.
+- now both client and server able produce the same symmetric key and can start encrypted communication.
 
 # How TLS 1.2 works?
 TLS 1.2 (Transport Layer Security version 1.2) is a protocol used to establish a secure connection between a client and a server over the internet. Here are the basic steps of how TLS 1.2 works:
