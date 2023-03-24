@@ -1,3 +1,45 @@
+## How ESNI works
+
+ESNI (Encrypted Server Name Indication) is an extension to the TLS (Transport Layer Security) protocol, designed to protect the privacy of the Server Name Indication (SNI) extension during the TLS handshake. Here's how ESNI works:
+
+Client initiates a TLS connection: A client initiates a TLS connection to a server by sending a ClientHello message, which includes a list of supported TLS extensions.
+
+Server responds with a ServerHello message: The server responds with a ServerHello message, which includes a selected cipher suite and a list of supported TLS extensions.
+
+Client sends ESNI key share: The client sends an ESNI key share extension in the ClientHello message, indicating its support for ESNI and providing a key share value.
+
+Server sends ESNI key share: The server responds with an ESNI key share extension in the ServerHello message, indicating its support for ESNI and providing a key share value.
+
+Client encrypts SNI: The client encrypts the SNI extension using the shared ESNI key and includes it in the encrypted extensions field of the ClientHello message.
+
+Server decrypts SNI: The server decrypts the SNI extension using the shared ESNI key and reads the hostname to which the client wants to connect.
+
+Server responds with encrypted data: The server responds with encrypted data, which is encrypted using the negotiated cipher suite and the shared ESNI key.
+
+Client decrypts the data: The client decrypts the data using the negotiated cipher suite and the shared ESNI key.
+
+By encrypting the SNI extension, ESNI prevents an attacker from intercepting and reading the SNI extension, protecting the privacy of the client's browsing activity. The use of ESNI also provides a more secure method for using encrypted DNS protocols, such as DNS over HTTPS (DoH) or DNS over TLS (DoT), since the SNI extension cannot be intercepted and used to determine which website the client is accessing.
+
+
+
+
+## What if attacker intercepts the SNI
+If an attacker intercepts the SNI (Server Name Indication) during the TLS handshake, they can use it to determine the hostname of the server the client is trying to connect to. This information can be used to perform various types of attacks, such as DNS spoofing, IP address spoofing, or man-in-the-middle attacks.
+
+In a DNS spoofing attack, the attacker can use the intercepted SNI to redirect the client to a different IP address, which could be a fake website or a website controlled by the attacker. The attacker can also use the SNI to determine the IP address of the server hosting the website, which can be used in other types of attacks.
+
+In an IP address spoofing attack, the attacker can use the intercepted SNI to determine the IP address of the server hosting the website and then spoof the IP address to intercept or modify the communication between the client and server.
+
+In a man-in-the-middle (MITM) attack, the attacker intercepts the communication between the client and server, decrypts it, and then re-encrypts it with their own SSL/TLS certificate. This allows the attacker to read or modify the communication between the client and server, potentially stealing sensitive information such as passwords or credit card numbers.
+
+To prevent these types of attacks, it is important to use secure protocols such as TLS with SNI encryption (ESNI) and encrypted DNS protocols like DNS over HTTPS (DoH) or DNS over TLS (DoT). By encrypting the SNI and using encrypted DNS protocols, it becomes much more difficult for attackers to intercept or modify the communication between the client and server, protecting the privacy and security of users on the internet.
+
+
+
+
+
+
+
 ## What is ESNI
 
 ESNI stands for Encrypted Server Name Indication, and it is an extension to the TLS (Transport Layer Security) protocol. ESNI is designed to protect the privacy of the server name during the TLS handshake by encrypting the Server Name Indication (SNI) extension.
