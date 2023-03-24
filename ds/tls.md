@@ -1,3 +1,16 @@
+## What is SNI
+
+SNI stands for Server Name Indication, and it is an extension to the TLS (Transport Layer Security) protocol. SNI allows a client to indicate the hostname of the server it wants to connect to during the TLS handshake, allowing multiple SSL/TLS certificates to be hosted on the same IP address.
+
+Before the introduction of SNI, only one SSL/TLS certificate could be associated with a single IP address. This meant that if a server hosted multiple websites with SSL/TLS certificates, it would need to have multiple IP addresses, which could be costly and complicated to manage.
+
+With SNI, a client can include the hostname it wants to connect to in the initial TLS handshake, allowing the server to select the appropriate SSL/TLS certificate and establish a secure connection with the client. This allows multiple SSL/TLS certificates to be hosted on the same IP address, reducing the need for additional IP addresses.
+
+SNI is widely supported by modern web browsers, but some older browsers and operating systems do not support it. In these cases, the server may not be able to determine the appropriate SSL/TLS certificate to use and may fall back to using the default certificate or display a warning to the user.
+
+Overall, SNI provides a way for servers to host multiple SSL/TLS certificates on a single IP address, improving flexibility and reducing costs.
+
+
 ## Does HTTPS Uses TCP
 Yes, HTTPS (Hypertext Transfer Protocol Secure) uses TCP (Transmission Control Protocol) as its underlying transport protocol.
 
