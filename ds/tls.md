@@ -1,3 +1,32 @@
+## How HTTPS works
+HTTPS (Hypertext Transfer Protocol Secure) is a protocol used for secure communication over the internet. It is a combination of the HTTP protocol for transmitting web content and the SSL/TLS protocols for providing encryption and authentication. Here's how HTTPS works:
+
+Client initiates a request: A user types a web address in their browser or clicks on a link to a secure website, which initiates an HTTPS request.
+
+Server responds with SSL/TLS certificate: The server responds to the request with its SSL/TLS certificate, which contains the public key used for encryption.
+
+Client verifies the certificate: The client (usually a web browser) verifies the SSL/TLS certificate using a trusted Certificate Authority (CA). The CA ensures that the certificate is valid and issued to the correct domain name.
+
+Client generates a symmetric key: After verifying the certificate, the client generates a symmetric encryption key to use for encrypting the data.
+
+Client encrypts the symmetric key: The client encrypts the symmetric key using the server's public key obtained from the SSL/TLS certificate.
+
+Client sends encrypted data: The client sends encrypted data (such as login credentials or other sensitive information) to the server over the secure connection.
+
+Server decrypts the symmetric key: The server decrypts the symmetric key using its private key, which is kept secret and not shared with anyone.
+
+Server decrypts the data: The server uses the decrypted symmetric key to decrypt the data received from the client.
+
+Server sends encrypted response: The server responds with encrypted data, which is encrypted using the symmetric key.
+
+Client decrypts the response: The client decrypts the response using the symmetric key, which is already known to it.
+
+By using SSL/TLS encryption, HTTPS ensures that the data transmitted between the client and server is encrypted and secure from eavesdropping, tampering, and other attacks. The SSL/TLS certificates and the verification process help ensure that the client is communicating with the intended server and not an impostor.
+
+
+
+
+
 ## TLS Termination Proxy
 ```text
 Client – [ Nginx – Server ]
