@@ -1,3 +1,12 @@
+## Does HTTPS Uses TCP
+Yes, HTTPS (Hypertext Transfer Protocol Secure) uses TCP (Transmission Control Protocol) as its underlying transport protocol.
+
+HTTPS is a protocol for secure communication over the internet, which is used to transmit sensitive information such as passwords, credit card details, and other personal information. It is a combination of HTTP and SSL/TLS protocols, where SSL/TLS provides the security layer.
+
+TCP, on the other hand, is a transport protocol that provides reliable, ordered, and error-checked delivery of data between applications over a network. It is responsible for breaking the data into packets, delivering them to the correct destination, and reassembling them in the correct order at the receiving end.
+
+When a client sends an HTTPS request to a server, it establishes a TCP connection with the server before any data transmission occurs. Once the connection is established, the client and server can exchange encrypted data over this connection. Therefore, TCP provides the reliable transport layer for the secure data transmission in HTTPS.
+
 ## How HTTPS works
 HTTPS (Hypertext Transfer Protocol Secure) is a protocol used for secure communication over the internet. It is a combination of the HTTP protocol for transmitting web content and the SSL/TLS protocols for providing encryption and authentication. Here's how HTTPS works:
 
