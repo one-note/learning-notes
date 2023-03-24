@@ -1,3 +1,16 @@
+## What is ESNI
+
+ESNI stands for Encrypted Server Name Indication, and it is an extension to the TLS (Transport Layer Security) protocol. ESNI is designed to protect the privacy of the server name during the TLS handshake by encrypting the Server Name Indication (SNI) extension.
+
+During the TLS handshake, the client sends an SNI extension in plain text to indicate the hostname of the server it wants to connect to. This SNI extension can be intercepted by an attacker who can use it to determine which websites the client is connecting to, even if the rest of the communication is encrypted.
+
+ESNI solves this problem by encrypting the SNI extension using a symmetric key shared between the client and server. This makes it difficult for an attacker to intercept and read the SNI extension, protecting the privacy of the client's browsing activity.
+
+ESNI is designed to be used with DNS over HTTPS (DoH) or DNS over TLS (DoT) protocols to provide end-to-end encryption for DNS queries. With ESNI and encrypted DNS protocols, an attacker cannot determine the website being accessed or the IP address of the server hosting the website.
+
+ESNI is currently supported by modern web browsers and some servers, but its adoption is still limited. However, it is expected to become more widely adopted in the future as the need for privacy and security on the internet continues to grow.
+
+
 ## What is SNI
 
 SNI stands for Server Name Indication, and it is an extension to the TLS (Transport Layer Security) protocol. SNI allows a client to indicate the hostname of the server it wants to connect to during the TLS handshake, allowing multiple SSL/TLS certificates to be hosted on the same IP address.
