@@ -1,9 +1,5 @@
 # learning-notes
 
-- React Js Basics ( AFTRENOON )
-- Instgram Design ( EVENING )
-- IAM Basic and ADVANCED (7 to 9)
-
 ## kafka
 
 ```
