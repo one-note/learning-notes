@@ -1,3 +1,6 @@
+28/03/2023
+- Design Zoom/Skype Video Calling
+- ES6 Concepts
 27/03/2023
 - Messaging Chat
 - React JS Forms
