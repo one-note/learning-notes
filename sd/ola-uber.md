@@ -18,3 +18,7 @@ Shell is small in size.
 - so s2 will send the request to 5,7,9,2 to find the cabs. Sort the cabs which has less ETA for pickup.
 - After sorting the cabs s2 sends request to each cab one by one and if match occurs then user gets notified.
 
+```text
+Uber uses google map API to find the ETA between 2 lat and long values and updates the user.
+```
+
