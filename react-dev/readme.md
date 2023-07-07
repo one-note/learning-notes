@@ -1,12 +1,13 @@
 # React JS Notes
 React Hooks:
-•	useState
-•	useEffect
-•	useContext
-•	useMemo
-•	useCallback
-•	useRef
-•	useReducer / Redux
+
+-	useState
+-	useEffect
+-	useContext
+-	useMemo
+-	useCallback
+-	useRef
+-	useReducer / Redux
 
 ## useState
 ```javascript
