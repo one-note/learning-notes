@@ -83,9 +83,9 @@ export default StateExample4;
 ```
 Notes:
  
-useEffect
+## useEffect
 
-
+```javascript
 export const UseEffectExample = () => {
   let [count, setCount] = useState(0);
   let [age, setAge] = useState(10);
@@ -124,11 +124,13 @@ export const UseEffectExample = () => {
   );
 };
 
+```
 Notes:
  
-useContext / createContext
+## useContext / createContext
 
 Defining context:
+
 
 import { createContext } from "react";
 
