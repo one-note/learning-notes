@@ -129,15 +129,15 @@ Notes:
  
 ## useContext / createContext
 
-Defining context:
+### Defining context:
 
-
+```javascript
 import { createContext } from "react";
 
 export const AppContext = createContext();
 
 
-Initialize Context
+
 import { AppContext } from "./ContextDef";
 import { Header } from "./Header";
 
@@ -151,8 +151,8 @@ export const Page = ()=>{
       </AppContext.Provider>  
     </>
 }
-
-Consuming Context
+```
+### Consuming Context
 import { useContext } from "react";
 import { AppContext } from "./ContextDef";
 
@@ -166,8 +166,9 @@ export const Header=(props)=>{
 Notes:
 What is prop drilling in react.
  
-useMemo
+## useMemo
 
+```javascript
 export const MemoExample = ()=>{
 
     const [count, setCount] = useState(0);
@@ -210,11 +211,12 @@ export const MemoExample = ()=>{
     <hr />
     </>
 }
-
+```
 Notes:
  
-useCallback
+## useCallback
 
+```javascript
 import { memo, useEffect } from "react";
 import { useState } from "react"
 
@@ -327,10 +329,13 @@ const Item=({count, increment})=>{
 }
 
 const ItemMemo = React.memo(Item);
-
+```
 Notes:
  
-useRef
+## useRef
+
+```javascript
+
 import { useRef } from "react"
 
 export const RefExample = ()=>{
@@ -344,8 +349,10 @@ export const RefExample = ()=>{
       <input onChange={handleOnChange} type="text" ref= {inputRef} />
     </>
 }
+
+```
+
+## useReducer
  
-useReducer
- 
-React Form
+# React Form
 
