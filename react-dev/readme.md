@@ -189,3 +189,88 @@ export const Example2 = ()=>{
 
 }
 ```
+
+# Nested Route
+
+## Define Components
+
+```jsx
+import { Link, useParams } from "react-router-dom"
+
+
+const BookList = ()=>{
+
+    let style={
+        paddingLeft: '25px'
+    }
+    const books = [
+        {id:1,name:'book1'},
+        {id:2,name:'book2'}
+    ]
+
+    return <>
+        <ul>
+            {books.map((book)=>{
+                return <li key={book.id}>{book.name}
+                <span style={style}>
+                <Link to={`${book.id}`}>View</Link>
+                </span>
+                </li>
+            })}
+        </ul>
+    </>
+}
+
+const Book=()=>{
+
+    let {bookId} = useParams(); // retrieved the bookId
+    return <>
+      {bookId}
+    </>
+}
+
+const NewBook = ()=>{
+    return <>
+    <h1>New Book</h1>
+    </>
+}
+export {BookList, Book, NewBook}
+```
+
+## Add Routes, Route, Nested Route and Link
+
+```jsx
+import { Link, Route, Routes } from "react-router-dom";
+import { Book, BookList, NewBook } from "./Pages";
+
+export const Example3 = () => {
+  let content = `nested routes`;
+
+  let styles = {
+    color: "red",
+    fontSize: "30px",
+    style: "bold",
+  };
+  return (
+    <>
+      <p style={styles}>{content}</p>
+      <ul>
+        <li>
+          <Link to="shops/books">Book List</Link>
+        </li>
+        <li>
+          <Link to="shops/books/new">New Book</Link>
+        </li>
+      </ul>
+      <Routes>
+        <Route path="shops">
+          <Route path="books" element={<BookList />} />
+          <Route path="books/:bookId" element={<Book />} />
+          <Route path="books/new" element={<NewBook />} />
+        </Route>
+      </Routes>
+    </>
+  );
+};
+
+```
