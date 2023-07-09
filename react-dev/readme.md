@@ -25,3 +25,57 @@ root.render(
 reportWebVitals();
 
 ```
+
+### Defining Components
+
+```jsx
+
+
+const Home = ()=>{
+    return <>
+    <h1>Home Page</h1>
+    </>
+}
+
+const About =()=>{
+    return <>
+     <h1>About</h1>
+    </>
+}
+
+const Contact = ()=>{
+    return <>
+    <h1>Contact</h1>
+    </>
+}
+
+const PageNotFound = ()=>{
+    return <>
+        <h1>Page Not Found</h1>
+    </>
+}
+
+export {Home,About,Contact,PageNotFound}
+```
+### Registering Components With Routes and Route
+
+```jsx
+import { Route, Router, Routes } from "react-router-dom"
+import { About, Contact, Home, PageNotFound } from "./components/ex1/BasicNavigation"
+
+
+export const Root = ()=>{
+
+    return <>
+    
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="about" element={<About/>}/>
+            <Route path="contact" element={<Contact/>}/>
+            <Route path="*" element={<PageNotFound/>}/>
+        </Routes>
+
+    </>
+
+}
+```
