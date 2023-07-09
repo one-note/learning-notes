@@ -122,7 +122,6 @@ import { Link, useParams } from "react-router-dom"
 
 const BookList = ()=>{
 
-/** dynamic route added to the li element */
     let style={
         paddingLeft: '25px'
     }
@@ -136,7 +135,7 @@ const BookList = ()=>{
             {books.map((book)=>{
                 return <li key={book.id}>{book.name}
                 <span style={style}>
-                <Link to={`${book.id}`}>View</Link> 
+                <Link to={`${book.id}`}>View</Link>
                 </span>
                 </li>
             })}
@@ -146,19 +145,25 @@ const BookList = ()=>{
 
 const Book=()=>{
 
-    let {bookId} = useParams();
+    let {bookId} = useParams(); // retrieved the bookId
     return <>
       {bookId}
     </>
 }
-export {BookList, Book}
+
+const NewBook = ()=>{
+    return <>
+    <h1>New Book</h1>
+    </>
+}
+export {BookList, Book, NewBook}
 ```
 
 ## Add Routes, Route, Link
 
 ```jsx
 import { Link, Route, Routes } from "react-router-dom"
-import { Book, BookList } from "./Pages"
+import { Book, BookList, NewBook } from "./Pages"
 
 export const Example2 = ()=>{
 
@@ -173,10 +178,12 @@ export const Example2 = ()=>{
       <p style={styles}>{content}</p>
         <ul>
             <li><Link to="books">Book List</Link></li>
+            <li><Link to="books/new">New Book</Link></li>
         </ul>
       <Routes>
         <Route path="/books" element={<BookList/>}/>
         <Route path="/books/:bookId" element={<Book/>}/>
+        <Route path="/books/new" element={<NewBook/>}/>
       </Routes>
     </>
 
