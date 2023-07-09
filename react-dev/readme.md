@@ -109,3 +109,76 @@ export const Root = ()=>{
 
 }
 ```
+
+# Dynamic Routing
+
+/books/:bookId: Here bookId is dynamic.
+
+## Define Components
+
+```jsx
+import { Link, useParams } from "react-router-dom"
+
+
+const BookList = ()=>{
+
+/** dynamic route added to the li element */
+    let style={
+        paddingLeft: '25px'
+    }
+    const books = [
+        {id:1,name:'book1'},
+        {id:2,name:'book2'}
+    ]
+
+    return <>
+        <ul>
+            {books.map((book)=>{
+                return <li key={book.id}>{book.name}
+                <span style={style}>
+                <Link to={`${book.id}`}>View</Link> 
+                </span>
+                </li>
+            })}
+        </ul>
+    </>
+}
+
+const Book=()=>{
+
+    let {bookId} = useParams();
+    return <>
+      {bookId}
+    </>
+}
+export {BookList, Book}
+```
+
+## Add Routes, Route, Link
+
+```jsx
+import { Link, Route, Routes } from "react-router-dom"
+import { Book, BookList } from "./Pages"
+
+export const Example2 = ()=>{
+
+    let content = `dynamic routing`;
+
+    let styles = {
+        color:'red',
+        fontSize:'30px',
+        style:'bold'
+    }
+    return <>
+      <p style={styles}>{content}</p>
+        <ul>
+            <li><Link to="books">Book List</Link></li>
+        </ul>
+      <Routes>
+        <Route path="/books" element={<BookList/>}/>
+        <Route path="/books/:bookId" element={<Book/>}/>
+      </Routes>
+    </>
+
+}
+```
