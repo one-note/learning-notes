@@ -344,3 +344,83 @@ export const Example4 = () => {
 };
 
 ```
+
+# Routlet Context
+
+## Define Component
+
+- outlet context will be defined in parent component
+- when child component rendered as nested route, child component can consume it from `useRouteletContext()`
+
+```jsx
+import { Outlet, useOutletContext } from "react-router-dom"
+
+
+const Home=()=>{
+    return <>
+    <h1>Home</h1>
+    </>
+}
+
+const About = ()=>{
+
+    let person={
+        name: 'John Doe',
+        city: 'Paris',
+        age: 30
+    }
+    return <>
+    <h1>About</h1>
+  
+    <Outlet context={person}/>
+    </>
+}
+
+const Settings = ()=>{
+
+    let {name, age} = useOutletContext();
+    return <>
+    <h1>Settings</h1>
+    {name} | {age}
+    </>
+}
+
+export {Home, About, Settings}
+```
+
+## Add Rputes, Route, Link
+
+```jsx
+import { Link, Route, Routes } from "react-router-dom";
+import { About, Home, Settings } from "./Pages";
+
+export const Example5 = () => {
+  let styles = { fontSize: "20px", color: "red" };
+  let content = `Routlet Context Example`;
+  return (
+    <>
+      <h1 style={styles}>{content}</h1>
+
+      <ul>
+        <li>
+          <Link to="home">Home</Link>
+        </li>
+        <li>
+          <Link to="about">About</Link>
+        </li>
+        <li>
+          <Link to="about/settings">About | Settings</Link>
+        </li>
+      </ul>
+
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />}>
+          <Route path="settings" element={<Settings />} />
+        </Route>
+      </Routes>
+    </>
+  );
+};
+
+```
