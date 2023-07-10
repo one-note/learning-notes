@@ -274,3 +274,73 @@ export const Example3 = () => {
 };
 
 ```
+
+# React Routlet
+
+A place holder in parent compoent to display components mapped by child routes.
+
+## Define Components
+```jsx
+import { Outlet } from "react-router-dom"
+
+
+const Home=()=>{
+    return <>
+    <h1>Home</h1>
+    </>
+}
+
+const About = ()=>{
+    return <>
+    <h1>About</h1>
+    <Outlet/>
+    </>
+}
+
+const Settings = ()=>{
+    return <>
+    <h1>Settings</h1>
+    </>
+}
+
+export {Home, About, Settings}
+```
+
+Outlet is defined inside About Component. It means About component will have nested route or child route.
+
+## Define Routes, Route, Link
+
+```jsx
+import { Link, Route, Router, Routes } from "react-router-dom";
+import { About, Home, Settings } from "./Pages";
+
+export const Example4 = () => {
+  let styles = { fontSize: "20px", color: "red" };
+  let content = `Routlet Example`;
+  return (
+    <>
+      <h1 style={styles}>{content}</h1>
+
+      <ul>
+        <li>
+          <Link to="home">Home</Link>
+        </li>
+        <li>
+          <Link to="about">About</Link>
+        </li>
+        <li>
+          <Link to="about/settings">About | Settings</Link>
+        </li>
+      </ul>
+
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />}>
+          <Route path="settings" element={<Settings />} />
+        </Route>
+      </Routes>
+    </>
+  );
+};
+
+```
