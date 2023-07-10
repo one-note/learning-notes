@@ -79,7 +79,7 @@ export const Root = ()=>{
 
 }
 ```
-## Adding Navigation Links
+### Adding Navigation Links
 
 ```jsx
 import { Link, Route, Routes } from "react-router-dom"
