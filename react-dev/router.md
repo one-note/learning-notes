@@ -424,3 +424,68 @@ export const Example5 = () => {
 };
 
 ```
+# Multiple Routes
+
+## Define Multiple Routes
+```jsx
+import { Route, Routes } from "react-router-dom";
+import { About, Contact, Home, Nav } from "./Pages";
+
+export const Example6 = () => {
+  let content = `multiple routes`;
+  let styles = { fontSize: "20px", color: "red" };
+
+  return (
+    <>
+      <h1 style={styles}>{content}</h1>
+
+      <Nav />
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+      <Routes>
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </>
+  );
+};
+
+```
+
+## Define Components
+
+```jsx
+import { Link } from "react-router-dom"
+
+
+const Home=()=>{
+    return <>
+    <h1>Home</h1>
+    </>
+}
+
+const About=()=>{
+    return <>
+    <h1>About</h1>
+    </>
+}
+
+const Contact=()=>{
+    return <>
+    <h1>Contact</h1>
+    </>
+}
+
+const Nav=()=>{
+
+    return <>
+    <ul>
+        <li><Link to="home">Home</Link></li>
+        <li><Link to="about">About</Link></li>
+        <li><Link to="contact">Contact</Link></li>
+    </ul>
+    </>
+}
+export {Home, About, Contact, Nav}
+```
