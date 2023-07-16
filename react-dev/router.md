@@ -489,3 +489,96 @@ const Nav=()=>{
 }
 export {Home, About, Contact, Nav}
 ```
+
+# Component as Routes
+
+## Register Component as Routes
+```jsx
+import { Route, Routes } from "react-router-dom";
+import { AuthorRoutes, Home, Nav } from "./Pages";
+
+export const Example7 = () => {
+  let content = `component as routes`;
+  let styles = { fontSize: "20px", color: "red" };
+
+  return (
+    <>
+      <h1 style={styles}>{content}</h1>
+      <Nav />
+      <Routes>
+        <Route path="home" element={<Home />} />
+        {/* <Route path="author" element={<Author/>}>
+            <Route path="books" element={<Books/>}/>
+        </Route> */}
+        <Route path="author/*" element={<AuthorRoutes />} />
+        {/** AuthorRoutes is a component but defined with Route */}
+      </Routes>
+    </>
+  );
+};
+
+```
+
+## Define Componenr as Routes
+
+```jsx
+import { Link, Outlet, Route, Routes } from "react-router-dom";
+
+const Home = () => {
+  return (
+    <>
+      <h1>Home</h1>
+    </>
+  );
+};
+
+const Author = () => {
+  return (
+    <>
+      <h1>Author</h1>
+      <Outlet />
+    </>
+  );
+};
+
+const AuthorRoutes = () => {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Author />}>
+          <Route path="books" element={<Books />} />
+        </Route>
+      </Routes>
+    </>
+  );
+};
+
+const Books = () => {
+  return (
+    <>
+      <h1>Books</h1>
+    </>
+  );
+};
+
+const Nav = () => {
+  return (
+    <>
+      <ul>
+        <li>
+          <Link to="home">Home</Link>
+        </li>
+        <li>
+          <Link to="author">Author</Link>
+        </li>
+        <li>
+          <Link to="author/books">Author/Books</Link>
+        </li>
+      </ul>
+    </>
+  );
+};
+
+export { Home, Author, AuthorRoutes, Books, Nav };
+
+```
