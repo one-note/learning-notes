@@ -1,6 +1,6 @@
 # BrowserRouter
 
-## Simple Routing
+# Simple Routing
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -26,7 +26,7 @@ reportWebVitals();
 
 ```
 
-### Defining Components
+## Defining Components
 
 ```jsx
 
@@ -57,7 +57,7 @@ const PageNotFound = ()=>{
 
 export {Home,About,Contact,PageNotFound}
 ```
-### Registering Components With Routes and Route
+## Registering Components With Routes and Route
 
 ```jsx
 import { Route, Router, Routes } from "react-router-dom"
@@ -79,7 +79,7 @@ export const Root = ()=>{
 
 }
 ```
-### Adding Navigation Links
+## Adding Navigation Links
 
 ```jsx
 import { Link, Route, Routes } from "react-router-dom"
